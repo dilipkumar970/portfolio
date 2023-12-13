@@ -127,6 +127,7 @@ body {
     border-radius: 5px;
     margin: 10%;
     margin-top: 10%;
+    box-shadow: 2px solid #66FCF1;
     }
 
     .animate {
@@ -170,6 +171,9 @@ body {
     
 .image img {
   width: 100%;
+      border-radius: 5px;
+
+    
 
 }
 
