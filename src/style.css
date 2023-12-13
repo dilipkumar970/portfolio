@@ -1,0 +1,216 @@
+* {box-sizing:border-box}
+
+/*  Sidenavbar for menu */
+
+body {
+    color: #C5C6C7;
+   
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 22px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #62f7f7;
+    text-shadow: 2px #62f7f7;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 500px) {
+    .sidenav {padding-top: 10px;}
+    .sidenav a {font-size: 15px;}
+  }
+
+ .span {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+  
+  .text{
+    color: aqua;
+    font-family: 'Montserrat';
+    font-size: 60px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-left: 17%;
+    margin-top: 13%;
+    transform: translateX(-200%);
+    opacity: 0;
+    animation: slide-in-anim 1.5s ease-out forwards;
+  }
+  
+  @keyframes slide-in-anim {
+    20% {
+      opacity: 0;
+    }
+    60% {
+      transform: translateX(-45%);
+    }
+    75% {
+      transform: translateX(-52%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-50%);
+    }
+  }
+  
+
+
+  /* Contact details */
+
+  * {box-sizing: border-box;}
+  .Contact {
+    position: absolute;
+    left: 40%;
+
+  
+        /* When moving the mouse over the submit button, add a darker green color */
+      input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    input[type=text], select, textarea {
+      text-align: left;
+      width: 50%; /* Full width */
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+    }
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+      padding: 12px 20px;
+      margin-top: 30px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  /* blog and cards */
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .cards {
+    display: inline-block;
+    width: 20%;
+    background-color: rgb(220, 213, 213);
+    border-radius: 5px;
+    margin: 10%;
+    margin-top: 10%;
+    }
+
+    .animate {
+      animation-duration: 2s;
+      animation-timing-function: ease-in;
+      animation-fill-mode: forwards;
+    }
+    
+    .slideInLeft{
+      animation:  slideInLeft 1s ease-in 1s ;
+
+    }
+    @keyframes  slideInLeft{
+      from{
+        transform: translateX(-100%);
+      }
+       to {
+        transform: translateX(0px);
+        
+       }
+     }
+/*
+     @keyframes bounce {
+      0%
+      {
+        transform: translateY(0%);
+      }
+      50%
+      {
+        transform: translateY(-20%);
+      }
+      80%
+      {
+        transform: translateY(-20%);
+      }
+      100%{
+        transform: translateY(0);
+      }
+     }
+*/
+    
+.image img {
+  width: 100%;
+
+}
+
+.button {
+  padding: 50px 20px 30px ;
+  color: #62f7f7;
+  font-weight: 600;
+  font-size: medium;
+
+}
+
+.button a {
+ float: right;
+ padding-bottom: 40px;
+ font-family: 'Montserrat' ;
+ cursor: pointer;
+}
+
+a:hover{
+  color: #ec8a20;
+  box-shadow:5px  #f29b0f;
+}
+
+
+
+.title {
+  text-align: center;
+  font-family: 'Montserrat';
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.title h3 {
+  color: #111;
+}
+
+.des {
+  margin: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  color: #111;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Montserrat' ;
+}
