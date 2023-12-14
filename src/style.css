@@ -1,4 +1,6 @@
-* {box-sizing:border-box}
+* {
+  box-sizing:border-box
+}
 
 /*  Sidenavbar for menu */
 
@@ -87,19 +89,19 @@ body {
 
   /* Contact details */
 
-  * {box-sizing: border-box;}
   .Contact {
     position: absolute;
-    left: 40%;
+    margin-left:4%;
+    text-align: center;
 
   
         /* When moving the mouse over the submit button, add a darker green color */
       input[type=submit]:hover {
       background-color: #45a049;
     }
-    input[type=text], select, textarea {
+    .input[type=text], select , textarea{
       text-align: left;
-      width: 50%; /* Full width */
+     /* Full width */
       border: 1px solid #ccc; /* Gray border */
       border-radius: 4px; /* Rounded borders */
       box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -115,22 +117,50 @@ body {
   }
 
   /* blog and cards */
+ 
   *{
     margin: 0px;
     padding: 0px;
   }
 
   .cards {
-    display: inline-block;
     width: 20%;
     background-color: rgb(220, 213, 213);
     border-radius: 5px;
     margin: 10%;
     margin-top: 10%;
     box-shadow: 2px solid #66FCF1;
+    position: relative;
+    display: inline-block;
     }
 
-    .animate {
+  @media only screen and (min-width: 300px) and  (max-width: 700px){
+
+    .cards .des{
+      column-count:2;
+      column-width: 50%;
+    }
+    .cards {
+      width: 50%;
+      margin:5px;
+      overflow: auto;
+      width: 100%;
+      resize: horizontal;
+      padding-bottom: 20%;
+      margin-top: 5%;
+    }
+    .Contact .h3{
+      font-size: 20vw;
+    }
+
+    .Contact {
+      margin-left: 10px;
+    }
+  
+  }
+   
+  
+  .animate {
       animation-duration: 2s;
       animation-timing-function: ease-in;
       animation-fill-mode: forwards;
@@ -171,9 +201,7 @@ body {
     
 .image img {
   width: 100%;
-      border-radius: 5px;
-
-    
+  border-radius: 5px;
 
 }
 
@@ -182,7 +210,6 @@ body {
   color: #62f7f7;
   font-weight: 600;
   font-size: medium;
-
 }
 
 .button a {
@@ -192,12 +219,34 @@ body {
  cursor: pointer;
 }
 
-a:hover{
+.button a:hover{
   color: #ec8a20;
   box-shadow:5px  #f29b0f;
 }
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 .title {
   text-align: center;
@@ -217,4 +266,39 @@ a:hover{
   font-weight: 400;
   font-size: 20px;
   font-family: 'Montserrat' ;
+}
+
+.links .text{
+  position: relative;
+  font-size: x-large;
+  border-radius: 10px;
+}
+
+/* let's Connect */
+
+.ref {
+  background-color: aqua; /* Green */
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 15%;
+  margin-top: 2%;
+  border-radius: 10px ;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: 'Montserrat';
+}
+
+.button1 {
+  background-color: rgb(240, 216, 98); 
+  color: black; 
+  border: 2px solid white;
+}
+
+.button1:hover {
+  background-color: aqua;
+  color: white;
 }
