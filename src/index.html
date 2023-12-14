@@ -8,14 +8,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/x-icon" href="https://github.com/dilipkumar970/portfolio/blob/302ee573bec37fc4c8a3fe7128a244c86e5c6165/componets/favicon.jpg" >
+    <link rel="icon" type="image/x-icon" href="/componets/favicon.jpg" >
   </head>
       <!---forbackgroundimage---->
 
   <style>
     
     body {
-      background-image: url(./componets/img2.jpg);
+      background-image: url(/componets/img2.jpg);
       background-repeat: no-repeat;
       background-attachment: fixed;  
       background-size: cover;
@@ -48,7 +48,9 @@
       <!------About me ------->
 
       <div class="container">
-        <div class="text" id="About">Hey There!!</div>
+        <div class="text" id="About"><br>
+          <p style="padding-left: 3%;"> Hey There!!</p>
+        </div>
         <h2  style="font-family: 'Lora';">I am Bonagiri Dilipkumar!</h2>
         <h3 style="font-family: 'serif';">Underagrad in Computer Science Engineering with a specialization in Data Science</h3>
         <p style="font-size: 20px;color: #8cb27f;">at CMR Institute of Technology, Kandlakoya.My passion lies in innovation, exploring new frontiers, and employing tactical approaches to problem-solving. Throughout my academic journey, I've cultivated a strong belief in the power of patience and teamwork, recognizing these as integral to achieving collective goals.
@@ -61,13 +63,21 @@
         </div>
       </div>
 
+      <!-----Let's Connect------>
+
+      <div class="connect">
+        <a class=" ref button1" href="https://linktr.ee/dilipkumar_" target="_blank">Let's connect</a>
+
+      </div>
+
+      
         
       <!---Blogs-->
 
       <div class="section"></div>
       <div class="cards animate slideInLeft" id="blogs">
         <div class="image">
-          <img src="https://github.com/dilipkumar970/portfolio/blob/7c515f14dcb8571f93e9b9d9373389813f8be5db/componets/print5.jpg" alt="blog image">
+          <img src="/componets/print5.jpg" alt="blog image">
         </div>
         <div class="title">
           <h3>Demystifying BIOS Setup</h3>
@@ -76,14 +86,14 @@
           <p> "Flashing BIOS files with a flash drive is a procedure used to update corrupted BIOS firmware.This involves copying the necessary BIOS files onto a USB flash drive, booting the system,and executing the flashing process to either update the BIOS or recover from corruption."</p>
         </div>
         <div class="button">
-          <a href="https://correctionofbiosfile.hashnode.dev/" target="_blank">Read more</a>
+          <a href="https://correctionofbiosfile.hashnode.dev/" target="_blank"><span>Read more</span></a>
         </div>
 
       </div>
 
       <div class="cards animate slideInLeft" id="blogs">
         <div class="image">
-          <img src="https://github.com/dilipkumar970/portfolio/blob/5290b6184988fd863f1ca2c3640973ae45ca39bb/componets/maxresdefault.jpg" alt="blog image">
+          <img src="/componets/maxresdefault.jpg" alt="blog image">
         </div>
         <div class="title">
           <h3>"Streamlining Workflows: Harnessing Automation with Inkscape"</h3>
@@ -92,18 +102,18 @@
           <p>"Discover the power of Inkscape's automation features through NextGenerator extension. Learn how to streamline design workflows, optimize tasks, and boost productivity for efficient and effective graphic creation."</p>
         </div>
         <div class="button">
-          <a href="https://certificategeneration.hashnode.dev/" target="_blank">Read more</a>
+          <a href="https://certificategeneration.hashnode.dev/" target="_blank"><span>Read more</span></a>
         </div>
 
       </div>
 
     </div>
+      
+      <!-----contact deatils -->
 
-      <!---contact details-->
-
-      <br><br><h3 style="text-align: center; font-size: 2vw;font-family: 'Montserrat';color: #66FCF1;">Contact Form</h3><br><br>
-
-    <div id="Contact" class="Contact">
+      <div class="deatils" style=" margin-left: 35%; font-size: 20px;">
+      <div id="Contact" class="Contact">
+      <br><br><h3 style="color: #62f7f7; font-family: 'Montserrat';">Contact Form</h3><br><br>
       <form action="/index.php" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required style="width: auto;"><br><br>
@@ -112,20 +122,13 @@
         <input type="name" id="email" name="email" required style="width: auto;"><br><br>
         
         <label for="message">Message:</label><br>
-        <br><textarea id="message" name="message" rows="4" required style="width:20vw;"></textarea><br><br>
+        <br><textarea id="message" name="message" rows="3" required style="width:auto;"></textarea><br><br>
         
         <input type="submit" value="Submit">
       </form>
      </div>
-     <!---Social media connection ----->
+     </div>
 
-    <div class="links">
-      <div class="text" style="font-size: x-large; border-radius: 10px;   box-shadow: #62f7f7;color:red;">
-        <button class="refrence" >
-      <a href="https://linktr.ee/dilipkumar_" style="color: #66FCF1;">let's Connect</a>
-    </button>
-    </div>
-  </div> 
-
+     
   </body>
 </html>
