@@ -7,7 +7,38 @@
     <link rel="stylesheet" href="/src/componets/favicon.jpg">
     <link rel="stylesheet" href="style.css">
     </head>
+     <style>
+    
+      body {
+        background-image: url(/src/componets/img2.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+      }
+    </style>
     <body>
+      <!------side navbar menu----> 
+    
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">About</a>
+        <a href="./blogs.html" target="_blank">Blogs</a>
+        <a href="#">Works</a>
+        <a href="#Contact">Contact</a>
+      </div>
+      <span class="span" style="font-size:30px;cursor:pointer;color:#66FCF1;font-family: 'Abril Fatface';position: fixed;" onclick="openNav()" >&#9776; Menu</span>
+      <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            setTimeout(function () {
+                closeNav();
+            }, 3000); // Close the navigation after 3 seconds 
+        }
+  
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
       <div class="section">
         <div class="setup">
       <div class="cards animate slideInLeft" id="blogs">
